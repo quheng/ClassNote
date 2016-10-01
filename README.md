@@ -1,2 +1,2 @@
-# note
-this is just all kinds of my note
+# Class Note
+some class note in ZJU
