@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [git](git.md)
-* [dynamoDB](dynamodb.md)
+* [Git](git.md)
+* [DynamoDB](dynamodb.md)
 * [ZJU-ClassNote](zju-classnote.md)
+
 
