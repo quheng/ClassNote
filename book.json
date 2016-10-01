@@ -1,4 +1,8 @@
 {
+    "plugins": [
+         "include-codeblock"
+     ]
+
     "pluginsConfig": {
         "fontsettings": {
             "theme": "sepia",
