@@ -61,7 +61,7 @@ Transmission Control Protocol/Internet Protocol的简写，中译名为传输控
 ## Nyquist' theorem 奈奎斯特定理
 在一个无噪声的系统中，信号最高频率为H, 只需采样2H次即可，反之每秒钟最高传输2H个信息(bps)。
 
-mainium data rate = 2B $$log_2V$$(bits/seceg) 对于2进制信号,V = 2. 
+mainium data rate = 2B $$log_2V$$ (bits/seceg) 对于2进制信号,V = 2. 
 
 e.g.无噪声3kHz的信道不可能超过6000bps的速率传输2进制
 
