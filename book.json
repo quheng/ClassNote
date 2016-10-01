@@ -1,13 +1,5 @@
 {
     "plugins": [
          "include-codeblock"
-     ],
-
-    "pluginsConfig": {
-        "fontsettings": {
-            "theme": "sepia",
-            "family": "sans",
-            "size": 2
-        }
-    }
+     ]
 }
