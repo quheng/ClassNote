@@ -104,8 +104,7 @@ e.g.无噪声3kHz的信道不可能超过6000bps的速率传输2进制
 不同的人使用不同的频率以实现复用eg.打电话时，每个人只使用0~4000Hz的频率。但是线路支持的频率远远高于4000Hz。这时便可以用0~4000，4000~8000 ...实现了线路复用正交频分复用(OFDM)
 
 #### 时分复用(Time Division Multiplexing (TDM))
-
-![](https://leanote.com/api/file/getImage?fileId=561d49d238f411503500038e)
+![](/assets/ef8a981676976748ef418b3bbc396eef.png)
 
 #### 码分复用(Code Division Multiplexing (CDM))
 更能容忍干扰，允许来自不同用户的多个信号共享相同的频带用不同的方式编码bit，每一个基本单位叫做码片(chip)。用不同的序列区分该bit是属于谁的，本来发送1bit变成了m bit。编码方式需要满足正交，以区分出发送方， 这个正交性可以表示为$$S \cdot T = \frac{1}{m}\Sigma^m_{i=1} S_iT_i = 0$$
