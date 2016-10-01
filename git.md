@@ -5,7 +5,7 @@
 1.add ~/.ssh/config
 
 ```
-Host github_mada
+Host github
  HostName github.com
  IdentityFile ~/.ssh/id_rsa
 
