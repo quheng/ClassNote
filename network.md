@@ -44,8 +44,7 @@ Transmission Control Protocol/Internet Protocol的简写，中译名为传输控
 2. Internet 互联网层
 3. Transport 传输层
 4. Application 应用层
-
-![TCP/IP](https://leanote.com/api/file/getImage?fileId=562d894538f4114690001081)
+![TCP/IP](/assets/7381a8d54cde9c9f6eb70fa9659d83a9.png)
 
 ### 缺点
 
