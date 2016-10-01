@@ -1,19 +1,41 @@
-#Network
+# Network
 
-#Design Issue for the Layers
+# Design Issue for the Layers
+
 1. Addressing (寻址)
 2. Error Control(差错控制)
 3. Flow Control(流量控制)
 4. Multiplexing(多路)
 5. Routing(路由)
 
----#Reference Models## The OSI reference model### OSIOpen System Interconnection:国际标准化组织（ISO）制定了OSI模型，该模型定义了不同计算机互联的标准，是设计和描述极端机网络通信的基本框架。
+---
 
-###model1. Physical(ph,物理层)在物理上直接相连的两个节点之间，在多样的物理介质基础之上，利用物理介质的一些特性，为更高层次(Data Link)提供一个面向二进制文件(bit)的传输服务。2. Data Link(数据链路层)在物理上直接相连的两个节点之间, 在物理层的基础之上,为更高层次(Network)提供面向帧(Frame)的基本无错,平滑(针对网络状况调整传输速度)的传输服务.3. Network(网络层)在数据链路层的基础之上,将不同的数据链路串联起来,提供传输包(packet)的传输服务,实现了路由(确定传输方向),中继(如何传输),网络互联(串联链路层), 使得不直接相连的设备连接起来.4. Transport(t,运输层)接受来自上一层的数据, 在必要时将这些数据分割成更小的单元, 然后把数据传递给网络层并确保数据正确的传递到另一端. 运输层弥补1~3层和顶层应用之间的差距, 补足1~3层的缺点.5. Session(会话层)将网络任务分成一个个会话, 对网络过程进行组织, 增加网络的可靠性. 会话提供各种服务, 包括对话管理(dialog control 记录由谁来传递数据), 令牌控制(token management), 同步功能(synchronization).6. Presentaion关注传递信息的语法和语义, 管理抽象的数据结构, 并允许定义和交换更高层的数据结构.7. Application包含用户使用的各种协议如HTTP
+# Reference Models
+## The OSI reference model
+### OSI
+Open System Interconnection:国际标准化组织（ISO）制定了OSI模型，该模型定义了不同计算机互联的标准，是设计和描述极端机网络通信的基本框架。
 
-###other1. 4~7层在主机内完成, 1~3 层由路由器传输2. 协议数据单元PDU(Protocol Data Unit), 4~7 层不再为数据传输单位起名字, 统称为对应层次的PDU3. end-to-end 端对端关系, 4~7层均为端对端的关系4. 单工: 只能向一个方向通讯 半双工: 通讯方向可以不断切换, 实现双向通信, 但同一时间只能向一个方向通信 全双工: 可以同时向两个方向通信5. network sequence 大端(big-end)顺序
+###model
+1. Physical(ph,物理层)在物理上直接相连的两个节点之间，在多样的物理介质基础之上，利用物理介质的一些特性，为更高层次(Data Link)提供一个面向二进制文件(bit)的传输服务。
+2. Data Link(数据链路层)在物理上直接相连的两个节点之间, 在物理层的基础之上,为更高层次(Network)提供面向帧(Frame)的基本无错,平滑(针对网络状况调整传输速度)的传输服务.
+3. Network(网络层)在数据链路层的基础之上,将不同的数据链路串联起来,提供传输包(packet)的传输服务,实现了路由(确定传输方向),中继(如何传输),网络互联(串联链路层), 使得不直接相连的设备连接起来.
+4. Transport(t,运输层)接受来自上一层的数据, 在必要时将这些数据分割成更小的单元, 然后把数据传递给网络层并确保数据正确的传递到另一端. 运输层弥补1~3层和顶层应用之间的差距, 补足1~3层的缺点.
+5. Session(会话层)将网络任务分成一个个会话, 对网络过程进行组织, 增加网络的可靠性. 会话提供各种服务, 包括对话管理(dialog control 记录由谁来传递数据), 令牌控制(token management), 同步功能(synchronization).
+6. Presentaion关注传递信息的语法和语义, 管理抽象的数据结构, 并允许定义和交换更高层的数据结构.
+7. Application包含用户使用的各种协议如HTTP
 
-###缺点1. Bad timing (标准制定的时间不合适)2. Bad techology (很多设计是出于政策而不是技术)3. Bad implementations (过于复杂造成的笨拙和低效)4. Bad politics (政府强加给开发者)
+###other
+1. 4~7层在主机内完成, 1~3 层由路由器传输
+2. 协议数据单元PDU(Protocol Data Unit), 4~7 层不再为数据传输单位起名字, 统称为对应层次的PDU
+3. end-to-end 端对端关系, 4~7层均为端对端的关系
+4. 单工: 只能向一个方向通讯 半双工: 通讯方向可以不断切换, 实现双向通信, 但同一时间只能向一个方向通信 全双工: 可以同时向两个方向通信
+5. network sequence 大端(big-end)顺序
+
+### 缺点
+1. Bad timing (标准制定的时间不合适)
+2. Bad techology (很多设计是出于政策而不是技术)
+3. Bad implementations (过于复杂造成的笨拙和低效)
+4. Bad politics (政府强加给开发者)
 
 ##TCP/IPTransmission Control Protocol/Internet Protocol的简写，中译名为传输控制协议/因特网互联协议，又名网络通讯协议，是Internet最基本的协议、Internet国际互联网络的基础，由网络层的IP协议和传输层的TCP协议组成。TCP/IP 代表了一个协议族, TCP和IP是其中最主要的两个协议.1. Host-to-network 链路层2. Internet 互联网层3. Transport 传输层4. Application 应用层
 
@@ -117,6 +139,6 @@
 
 #运输层
 
- 
+
 
 
