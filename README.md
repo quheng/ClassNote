@@ -20,4 +20,4 @@ Host github_quheng
 
 ```
 
-2. git clone git@github_quheng:quheng/repo.git
+2.git clone git@github_quheng:quheng/repo.git
